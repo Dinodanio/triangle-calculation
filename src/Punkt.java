@@ -61,8 +61,9 @@ public class Punkt {
         double deltaX13 = p3.xKoordinate - this.xKoordinate;
         double deltaY12 = p2.yKoordinate - this.yKoordinate;
         double deltaY13 = p3.yKoordinate - this.yKoordinate;
+        double flaeche = (Math.abs(deltaX12 * deltaY13 - deltaX13 * deltaY12)/2);
 
 
-        return (1/2) * (deltaX12 * deltaY13 - deltaX13 * deltaY12);
+        return flaeche;
     }
 }
